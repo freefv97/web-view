@@ -1,0 +1,32 @@
+/* IE6提示升级浏览器
+--------------------------------------------------------------------*/
+.Upgrade_bg {
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	background: url(../../img/common/adorn_bg.gif) #fff repeat-x left bottom;
+	border-top: solid 2px #1b5eb1;
+	display: none;
+	_display: block;
+}
+.Upgrade {
+	position: absolute;
+	width: 960px;
+	margin-left: -480px;
+	left: 50%;
+	top: 0px;
+	text-align: left;
+}
+.Upgrade .strong {
+	color: #1b5eb1;
+}
+.Upgrade .download {
+	float: right;
+	width: 80px;
+	margin-top: 2px;
+}
+.Upgrade .download a, .Upgrade .download a:link, .Upgrade .download a:visited, .Upgrade .download a:hover {
+	color: #fff;
+}

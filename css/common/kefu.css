@@ -1,0 +1,199 @@
+
+
+/* 在线客服by Ma */
+.toolbar {
+	width: 40px;
+	position: fixed;
+	right: 0;
+	top: 35%;
+	z-index: 11;
+	font-style: normal;
+	background-color:#134287;
+	letter-spacing: 0.08rem;
+}
+.toolbar dd {
+	width: 100%;
+	height: 40px;
+	position: relative;
+}
+.toolbar dd i {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.toolbar dd i span {
+	font-size: 12px;
+	color: #fff;
+	font-style: normal;
+	display: block;
+}
+.toolbar dd i img{
+	display: inline-block;
+	width: 20px;
+	/* margin-top: 10px; */
+}
+.toolbar dd.gottop {
+	display: none;
+}
+.toolbar .slide-tel {
+	display: block;
+	width: 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-family: arial;
+	color: #FFF;
+	position: absolute;
+	padding: 0 0 0 40px;
+	top: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+.toolbar .slide-tel p{
+	line-height: normal;
+}
+.toolbar .slide-tel:hover{
+	width: 170px !important;
+}
+.toolbar .pop {
+	position: absolute;
+	/* right: 100px !important; */
+	top: 0px;
+	background:#134287;
+	display: none;
+}
+.toolbar .pop-code {
+	width: 170px;
+	padding: 30% 0;
+}
+.toolbar .pop-code img {
+	display: block;
+	width: 80%;
+	margin-left: 10%;
+}
+.toolbar .pop-code h3 {
+	text-align: center;
+}
+.toolbar .pop-code h3{
+	color: #fff;
+	font-size: 16px;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.toolbar .pop-code h3 p:nth-child(1) {
+	font-size: 18px;
+}
+.toolbar .pop-code h3 p:nth-child(2) {
+	font-size: 18px;
+}
+.toolbar .qq span {
+	background-position: -35px -47px;
+}
+.toolbar .qq a {
+	width: 52px;
+	height: 52px;
+	cursor: pointer;
+	display: block;
+}
+.toolbar .qq:hover {
+	background-color:#134287;
+}
+.toolbar .qq:hover span {
+	background-position: 0 -47px;
+}
+/* .toolbar .tel span {
+	background-position: -35px 0;
+} */
+.toolbar .tel:hover {
+	background:#134287;
+}
+.toolbar .tel:hover span {
+	background-position: 0 0;
+}
+.toolbar .code span {
+	background-position: -35px -95px;
+}
+.toolbar .code:hover {
+	background-color:#134287;
+}
+.toolbar .code:hover span {
+	background-position: 0 -95px;
+}
+.toolbar .top span {
+	background-position: -35px -142px;
+}
+.toolbar .top:hover {
+	background-color:#134287;
+}
+/* .toolbar .top:hover span {
+	background-position: 0 -142px;
+} */
+.toolbar dd:hover {
+}
+.subright .searchList {
+	border-top: 1px solid #ddd;
+}
+.subright .searchList li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.subright .searchList li:first-child {
+	border-top: none;
+}
+.subright .searchList li:hover a h2 {
+	color:#134287;
+	font-weight: bold;
+}
+.leftprocomt {
+	padding-top: 10px;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+.leftprocomt li {
+	float: left;
+	text-align: center;
+	width: 108px;
+	margin-left: 9px;
+}
+.leftprocomt li img {
+	width: 20px;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-moz-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+}
+.leftprocomt li p {
+	line-height: 30px;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-moz-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+}
+.leftprocomt li:hover img {
+	-webkkit-filter: brightness(105%);
+	filter: brightness(105%);
+}
+.leftprocomt li:hover p {
+	color:#134287;
+}
+
+
+/* @media(max-width:960px){
+	.toolbar{
+		width: 60px;
+	}
+	.toolbar .slide-tel {
+		padding: 0 0 0 60px;
+	}
+	.toolbar dd i {
+		width: 60px;
+	}
+}
+ */

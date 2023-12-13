@@ -1,0 +1,184 @@
+/* navi_01导航样式  
+--------------------------------------------------------------------*/
+.navBar {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	float:right;
+	margin-right:0px;
+	
+}
+/*nav*/
+.nav {
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+.nav h3 {
+	font-weight: normal;
+	font-size: 16px;
+	color:#666666;
+}
+.nav span{ font-size:12px; color:#999999;}
+.nav .m {
+	position: relative;
+	float: left;
+	width: auto;
+	display: inline;
+	text-align: center;
+}
+
+
+.nav .m .txt{ display:block; padding-left:20px; padding-right:20px; height:auto; text-align:center; font-size:16px; color:#666;}
+.nav .m .txt p{ margin-top:37px;}
+.nav .m .txt span{ font-family:Arial;}
+
+
+
+/*当前状态*/
+.nav .cur .txt{ color:#488275;}
+.nav .cur h3{ color:#488275;}
+.nav .cur p{ color:#488275;}
+.nav .cur span{ color:#488275;}
+
+.nav .m:hover .txt p{ color:#128348;}
+.nav .m:hover .txt span{ color:#128348;}
+.nav .m:hover .txt{ color:#128348;}
+
+
+.nav .cur h3 a:link, .nav .cur h3 a:visited {
+	background:#F00;
+}
+.nav .on .txt :link, .nav .on .txt:visited {
+	background:#F00;
+}
+.nav .on h3 a i {
+}
+
+/*一级*/
+.nav .sub {
+	display: none; /*默认隐藏*/
+	width: 150px;
+	position: absolute;
+	left: -18px;
+	top: 75px;
+	float: left;
+	line-height: 40px;
+	overflow:visible;
+	_width:500%;
+	_border-bottom:none;
+	
+}
+.nav .sub li {
+	text-align: center;
+	font-size: 15px;
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.nav .sub li a:link, .nav .sub li a:visited {
+	color: #333;
+	font-size: 15px;
+	display: block;
+	zoom: 1;
+	background-color:#f8f8f8;
+	border-top:none;
+	border-bottom:none;
+	padding: 0 10px;
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.nav .sub li a:hover {
+	background: #124386;/*副色*/
+	color: #fff;
+}
+
+
+/*二级*/
+.nav .m2 {
+	position: relative;
+	width: 100%;
+	display:inline-block;
+	text-align: left;
+	*float:left;
+	*display:block;
+}
+.nav .sub2 {
+	display: none; /*默认隐藏*/
+	width: 100px;
+	position: absolute;
+	z-index: 3;
+	left: 100%;
+	top: 0px;
+	line-height: 30px;
+	border-top:solid 1px #CCC;
+	border-bottom:solid 1px #CCC;
+	_left: 100px;
+}
+
+/*三级*/
+.nav .m3 {
+	position: relative;
+	width: 100%;
+	display:inline-block;
+	text-align: left;
+	*float:left;
+	*display:block;
+}
+.nav .sub3 {
+	display: none; /*默认隐藏*/
+	width: 100px;
+	position: absolute;
+	z-index: 3;
+	left: 100%;
+	top: 0px;
+	line-height: 30px;
+	border-top:solid 1px #CCC;
+	border-bottom:solid 1px #CCC;
+	_left: 100px;
+}
+		
+.nav .sub dl {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: top;
+	padding: 15px 29px;
+	line-height: 26px;
+	*display:inline;
+}
+.nav .sub dl a:hover {
+	color: #1b5eb1;
+}
+.nav .sub dl dt a:link, .nav .sub dl dt a:visited  {
+	color: #000;
+}
+.nav .sub dl dd a:link, .nav .sub dl dd a:visited {
+	color: #999;
+	padding-left: 7px;
+}
+.nav .m .sub{ z-index:999;}
+
+
+@media(max-width:1500px){
+	.nav .sub {top: 70px;width: 140px;}
+	.nav .sub li a:link, .nav .sub li a:visited{font-size: 13px;}
+}
+@media(max-width:1400px){
+	.nav .sub {top: 65px;width: 130px;}
+}
+@media(max-width:1300px){
+	.nav .sub {top: 60px;}
+	.nav .sub li a:link, .nav .sub li a:visited{font-size: 12px;left: -22px;}
+}
+@media(max-width:1200px){
+	.nav .sub {top: 50px;left: -24px;}
+}
+
+
+
+
+
+
