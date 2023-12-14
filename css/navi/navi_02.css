@@ -60,7 +60,7 @@
 	display: none; /*默认隐藏*/
 	width: 150px;
 	position: absolute;
-	left: -18px;
+	left: -30px;
 	top: 75px;
 	float: left;
 	line-height: 40px;
@@ -92,7 +92,7 @@
 	white-space: nowrap;
 }
 .nav .sub li a:hover {
-	background: #124386;/*副色*/
+	background: #000;/*副色*/
 	color: #fff;
 }
 

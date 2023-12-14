@@ -2,15 +2,32 @@
 /*====================导航*********/
 .header{
 	width:100%;
-	box-sizing: border-box;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
 }
-
-
+.header-container{
+	margin: auto;
+}
+/*左侧logo*/
+.header .left{
+	width: 12%;
+	display: inline-block;
+}
+.header .left a img{
+	margin-top: 16px;
+}
+.header .left .img2{
+	display: none;
+}
+/*右侧*/
 
 
 /*白色背景的头部*/
 .header.on{
-	
+	background:#fff;
+	box-shadow: 0 15px 27px 0 rgba(167,165,165,0.38);
 }
 .header.on .left .img1{
 	display: none;
@@ -67,12 +84,11 @@
 .m_nav .logo{
 	width: 100%;
 	margin:0 auto;
-	padding: 10px 0;
 }
 .m_nav .logo img{
-	height: 40px;
+	height: 45px;
 	display: block;
-	margin: 0 auto;
+	margin:10px auto;
 }
 .m_nav .ul{
 	margin-top: 30px;
@@ -120,7 +136,7 @@
 	display: inline-block;
 	text-decoration: none;
 	color: #333;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 32px;
 	height: 50px;
 	line-height: 50px;
@@ -144,7 +160,6 @@
 }
 
 
-
 .m_nav .ul li .dropdown_menu{
 	display: none;
 }
@@ -153,42 +168,36 @@
 }
 .m_nav .ul li .dropdown_menu a{
 	display: block;
-    height: 35px;
-    line-height: 35px;
-    padding: 0 40px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #f5f5f5;
-    font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 40px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f5f5f5;
 }
 .m_nav .ul li .dropdown_menu a:last-child{
 	border: none;
 }
 
-.m_nav .ul li:last-child a {
-    display: inline;
-}
-
-
-
 @media screen and (max-width: 960px){
+	.header{
+		height: 100px;
+	}
 	.m_nav{
 		display: block;
-	}
-	.pc_menu,.language{
-		display: none;
 	}
 	.header .left a img{
 		margin-top: 10px;
 		width: 50px;
 	}
 	.header #navToggle {
-		height: 20px;
 		display: inline-block;
+		float: right;
 		background: transparent;
-}
+		margin-top: 20px;
+	}
 	.header #navToggle span {
 		position: relative;
-		width: 25px;
+		width: 30px;
 		height: 1px;
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -209,14 +218,14 @@
 		-o-transition: 0.3s;
 		transition: 0.3s;
 		display: block;
-		background: #134287;
-		height: 2px;
+		background: #000;
+		height: 3px;
 	}
 	.header #navToggle span:before {
-		top: 8px;
+		top: 10px;
 	}
 	.header #navToggle span:after {
-		bottom: 10px;
+		bottom: 12px;
 	}
 	.header #navToggle.open span:before {
 		top: 10px;
@@ -242,16 +251,14 @@
 		background: #4f4f4f;
 	}
 	
-	.header .nav{
+	.Big-index .nav{
 		display: none;
 	}
 }
 
-@media(max-width:760px){
-	.m_nav .ul li a{
-		font-size: 16px;
+@media(max-width:350px){
+	.header #navToggle{
+		margin-right: 0;
 	}
 }
-
-
 

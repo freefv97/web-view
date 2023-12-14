@@ -1,0 +1,104 @@
+
+
+.contact-main{
+    margin-top: 3%;
+}
+    .contact-top{
+        padding:  0 0 30px;
+        /* background: url(../img/footer-bg.jpg) no-repeat; */
+        background-size: 100% 100%;
+    }
+    .contact-top ul{
+        /* max-width: 1280px; */
+        margin: 0 auto;
+        padding: 0 10%;
+    }
+    .contact-top ul li{
+        display: block;
+        margin-bottom: 15px;
+    }
+    .contact-top ul li img{
+        display: inline-block;
+        width: 20px;
+        vertical-align: top;
+        margin-right: 8px;
+        margin-top: 8px;
+    }
+    .contact-top ul li p{
+        display: inline-block;
+        color: #000;
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+@media(max-width:1400px){
+    .contact-top ul li p {
+        display: inline-block;
+        color: #000;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .contact-top ul li img {
+        margin-right: 3px;
+        margin-top: 3px;
+    }
+}
+@media(max-width:1200px){
+    .contact-top ul{
+        padding: 0 5%;
+    }
+}
+
+@media(max-width:990px){
+    .contact-top ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contact-top ul li{
+        display: block;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
+
+@media(max-width:760px){
+    .contact-top {
+        padding: 5% 0;
+        background-size: auto 100%;
+        background-position: 50%;
+    }
+}
+
+    /* 地图 */
+.map-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 60px 0px rgba(0, 0, 0, .2);
+    margin-bottom: 7%;
+}
+.con_map{ width:100%; padding-bottom:39%; position:relative;margin-top: -8%;z-index: 1;}
+.con_map .map{ position:absolute; top:0px; left:0px; width:100%; height:100%;}
+
+@media(max-width:1600px){
+    .map-container{
+        max-width:none;
+        margin: 0 10% 6%;
+    }
+}
+@media(max-width:1200px){
+    .map-container {
+        max-width: none;
+        margin: 0 5% 6%;
+    }
+}
+@media(max-width:760px){
+    .map-container {
+        max-width: none;
+        margin: 0 5% 6%;
+    }
+    .con_map{
+        padding-bottom: 60%;
+        margin-top: -10%;
+    }
+}

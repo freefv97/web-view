@@ -135,7 +135,7 @@ var mySwiper = new Swiper('.part_one .swiper-container', {
   	},
 })
 
-
+// 公司介绍轮播图
 $(document).ready(function() {
 	var owl = $('#index01-lbt');
 	var item_count = parseInt(owl.find('.item').length);
@@ -228,6 +228,75 @@ $(document).ready(function() {
   })
 
 
+// 发展历程
+$(document).ready(function() {
+	var owl = $('#history-lbt');
+	owl.owlCarousel({
+	  rtl: false,
+	  nav: true,
+	  loop: true,
+	  autoplay: true,
+	  autoplayTimeout: 4000,
+	  autoplayHoverPause: true,
+	  responsive: {
+		0: {
+			items: 2,
+			margin: 8,
+		  },
+		760: {
+		  items: 2,
+		  margin: 10,
+		},
+		960: {
+		  items: 3,
+		  margin: 15,
+		},
+		1200: {
+		  margin: 18,
+		  items: 4
+		},
+		1400: {
+			margin: 20,
+			items: 4
+		}
+	  }
+	})
+  })
+
+// 资质荣誉
+$(document).ready(function() {
+	var owl = $('#honor-lbt');
+	owl.owlCarousel({
+	  rtl: false,
+	  nav: true,
+	  loop: true,
+	  autoplay: true,
+	  autoplayTimeout: 4000,
+	  autoplayHoverPause: true,
+	  responsive: {
+		0: {
+			items: 2,
+			margin: 8,
+		  },
+		760: {
+		  items: 2,
+		  margin: 10,
+		},
+		960: {
+		  items: 3,
+		  margin: 15,
+		},
+		1200: {
+		  margin: 18,
+		  items: 4
+		},
+		1400: {
+			margin: 20,
+			items: 4
+		}
+	  }
+	})
+  })
 
 
 

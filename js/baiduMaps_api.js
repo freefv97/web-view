@@ -43,7 +43,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"广州珠江电缆有限公司",content:"办公室电话：020-37512313&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>地址：从化区高技术产业园高湖路26号",point:"113.519002|23.456673",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+    var markerArr = [{title:"AORAX",content:"办公室电话：020-37512313&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>地址：从化区高技术产业园高湖路26号",point:"113.519002|23.456673",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ];
     //创建marker
     function addMarker(){
